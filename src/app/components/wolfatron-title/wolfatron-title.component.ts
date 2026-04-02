@@ -17,7 +17,7 @@ export class WolfatronTitleComponent implements OnInit {
     // gsap.set("#a_txt",{ y:2000, autoAlpha:0 })
 
     // TITLE ANIMATION TIMELINE
-    var title_tl = gsap.timeline();
+    const title_tl = gsap.timeline();
     title_tl.from("#a_txt", { y:2000, autoAlpha:0, duration:.8, ease: "back.out"});
 
     title_tl.from("#wolf_txt", { x:-1000, autoAlpha:0, duration:.6, ease:"expo.out" }, "-=.4");
